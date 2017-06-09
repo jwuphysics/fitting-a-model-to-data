@@ -1,0 +1,10 @@
+It's quite possible that we'll need to fit models (of, e.g., data cubes)
+with correlated noise. In these cases, simple MCMC crawling will not
+recover true model params, because the noise model is incorrect.
+
+We will instead want to fit a model that already contains correlated noise,
+i.e., non-zero off-diagonal elements in the covariance matrix. A nice piece
+of code for this is "george," which can be accessed on github, and read about
+here: http://dan.iel.fm/george/current/user/model/
+
+
